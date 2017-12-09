@@ -8,8 +8,8 @@ print()
 score = 0
 itemsOnPerson = {} #These are the items our character will be carrying.
 itemsInMainCave = {'Sword of a Thousand Truths': "Steal",'Magical Shield':'Magic','Recorder': 'Music'} #These are the items in the main cabin.
-itemsOutside = {'Nothing': "Nothing"}
-itemsInDeadEnd = {'Nothing': "Nothing"}
+itemsOutside = {'Nothing': "Nothing"} #Here you can add more items to have alternate endings
+itemsInDeadEnd = {'Nothing': "Nothing"} #Here you can add more items to have alternate endings
 rooms = {'Main Cave': itemsInMainCave, 'Outside': itemsOutside, 'Dead End': itemsInDeadEnd}
 currentRoomKey = 'Main Cave'
 caveNumbers = {"1":'Dead End',"2":"Outside","3":'Main Cave'}
