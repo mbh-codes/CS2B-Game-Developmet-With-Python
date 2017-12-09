@@ -2,7 +2,6 @@
 # A prequel to Dragon Realm By Aaron Hobson
 
 # import stuff
-#import random #Commented out this line because we didn't use random
 import time
 print()
 # Global variables
@@ -20,7 +19,6 @@ def show_intro():
     print('''You wake up dazed and confused in a dark cave. 
 You stand up and see that there is tunnel that leads    
 further into the cave and that there is a tunnel that leads outside. ''')
-
     print()
 
 def choose_item():
@@ -46,7 +44,6 @@ def show_phase1():
     choose_item()
 
 
-
 def choose_cave():
     cave = ""
     while cave != "1" and cave != "2" and cave != "3":
@@ -56,12 +53,12 @@ def choose_cave():
               "     3: Hide and hope the dragons don't find you\n")
         cave = input()
     return cave
+
+
 def fire_ending():
     print('The Dragon turns around and opens its jaws and ...')
     time.sleep(2)
     print("Unleashed a fiery attack on you and turns you into ashes!")
-
-
 
 def check_room(room):
     global score
@@ -168,23 +165,8 @@ def check_room(room):
             time.sleep(2)
             print("More Dragons and their Mommas begin to show up and dance in mid air.")
             time.sleep(2)
-            print("You become worshipped by the Dragon Civilization and you will be know in Dragon History as the Mother of Dragons")
+            print("You become worshipped by the Dragon Civilization and you will be known in Dragon History as the Mother of Dragons")
             score += 1
-
-    #time.sleep(2)
-    #print("Smells like dragon farts...")
-    #time.sleep(2)
-    #print("A big ol' DRAGON jumps out in front of you and opens its jaws and...")
-    #print()
-    #time.sleep(2)
-    #friendly_dragon = random.randint(1, 2) #Random
-    #if cave_chosen == str(friendly_dragon):
-    #    print("Gives you his treasure!")
-    #    score += 1
-    #else:
-    #    print("He farts on you.")
-    #    if score >= 1:
-    #        score -= 1
 
 def play():
     stillPlaying = True
