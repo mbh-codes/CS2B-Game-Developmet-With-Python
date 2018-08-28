@@ -33,6 +33,15 @@ def choose_item():
         print('What item do you pick up?')
         chosenItem = input()
     itemsOnPerson[chosenItem] = rooms[currentRoomKey][chosenItem]
+    chosenItem = ''
+    while chosenItem not in rooms[currentRoomKey]:
+        for item in rooms[currentRoomKey]:
+            print(" "+item)
+            time.sleep(1)
+        print("What item do you pick up?")
+        chosenItem = input()
+    itemsOnPerson[chosenItem] = rooms[currentRoomKey][chosenItem]
+    print('Items on person:', itemsOnPerson)
     print('You have chosen:', chosenItem)
     return chosenItem
 
